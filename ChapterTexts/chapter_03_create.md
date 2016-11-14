@@ -10,7 +10,7 @@ The first thing we are going to do is navigate into the directory where we'd lik
 
 First we'll use the command line to make our project directory:
 
-$ ```bash
+```bash
 mkdir tictacturing
 ```
 
