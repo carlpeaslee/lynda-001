@@ -16,7 +16,7 @@ mkdir tictacturing
 
 ...and navigate into that directory...
 
-$ ```cd tictacturing```
+$ | ```cd tictacturing```
 
 Now, let's initialize a project:
 
