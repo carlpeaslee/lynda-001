@@ -4,4 +4,6 @@
 
 Chapter 1: Overview
 
-Chapter 2: Brainstorming A Project
+Chapter 2: Brainstorm
+
+Chapter 3: Create
