@@ -81,12 +81,12 @@ You can also go ahead and try running your new react app to see what it's render
 
 First navigate into your client directory:
 
-*```# ../tictacturing```*
+*```# ../tictacturing```* br/>
 ```cd client/```
 
 ...and then start your application!
 
-*```# ../tictacturing/client```*<br/>
+*```# ../tictacturing/client```* <br/>
 ```npm start```
 
 Your starter application should open up in your browser.
