@@ -135,10 +135,19 @@ export default store
 
 Our last step will be to connect out redux store to our react components with redux's `<Provider/>` component.
 
-Let's make our `App/index.js` component look like this:
+Let's create a separate container for our Redux Provider.
+
+```bash
+# ./client/src
+mkrdir containers/ReduxStore
+touch containers/ReduxStore/_index.js
+
+```
+
+...edit the file...
 
 ```javascript
-/*    ./client/src/containers/App/index.js     */
+/*    ./client/src/containers/ReduxStore/index.js     */
 
 import React, { Component } from 'react'
 
@@ -146,15 +155,36 @@ import React, { Component } from 'react'
 import {Provider} from 'react-redux'
 import store from '../../store'
 
-class App extends Component {
+class ReduxStore extends Component {
   render() {
     return (
       <Provider
-        {/*make sure to pass your store as a prop!*/}
         store={store}
       >
         <h1>TicTacTuring</h1>
       </Provider>
+    )
+  }
+}
+
+export default ReduxStore
+```
+
+...and then integrate our store into our app...
+
+```javascript
+/*    ./client/src/containers/App/index.js     */
+
+import React, { Component } from 'react'
+
+//bring in ReduxStore
+
+import ReduxStore from '../ReduxStore'
+
+class App extends Component {
+  render() {
+    return (
+      <ReduxStore/>
     )
   }
 }
@@ -169,4 +199,4 @@ Now that we've hooked up our store, let's test things out.
 npm start
 ```
 
-Great, and when I look at my site using react devtools, I see that my store is being successfully connected to the app via `<Provider/>`. 
+Great, and when I look at my site using react devtools, I see that my store is being successfully connected to the app via `<Provider/>`.
