@@ -81,7 +81,7 @@ You can also go ahead and try running your new react app to see what it's render
 
 First navigate into your client directory:
 
-*```# ../tictacturing``*
+*```# ../tictacturing```*
 ```cd client/```
 
 ...and then start your application!
