@@ -13,7 +13,7 @@ First we'll use the command line to make our project directory:
 
 |  |  | |
 --- | --- | ---
-| `../` | `$` | `mkdir tictacturing` |
+| </em> `../` | </em> `$` |  </em> `mkdir tictacturing` |
 
 ...and navigate into that directory...
 
