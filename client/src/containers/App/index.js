@@ -1,15 +1,11 @@
 import React, { Component } from 'react'
-import {Provider} from 'react-redux'
-import store from '../../store'
+
+import ReduxStore from '../ReduxStore'
 
 class App extends Component {
   render() {
     return (
-      <Provider
-        store={store}
-      >
-        <h1>TicTacTuring</h1>
-      </Provider>
+      <ReduxStore/>
     )
   }
 }
