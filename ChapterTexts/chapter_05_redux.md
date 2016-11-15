@@ -8,11 +8,11 @@ If you're not familiar with redux, I'll try to give brief explanations as I go a
 
 We need to create at least four files to get redux working. The order doesn't really matter so let's just jump in.
 
-First, we need to install `redux`:
+First, we need to install `redux` and `react-redux`:
 
 ```bash
 # ./client/src
-npm install redux --save
+npm install redux react-redux --save
 ```
 
 Let's start by creating a file for redux actions. We are going to try and group our actions together by feature.
@@ -29,10 +29,10 @@ Go ahead and open up the file we just created and lets write our first code.
 ```javascript
 /*    ./client/src/actions/tictactoe.js     */
 
-//first we make our action creator
+//our action creator
 export const TEST_REDUX = 'TEST_REDUX'
 
-//then we make the actual action
+//the action
 export function testRedux() {
   console.log('We are testing redux.')
   return {
@@ -41,8 +41,132 @@ export function testRedux() {
 }
 ```
 
-The action (`javascript testRedux()`) will be the function we call from our component. The action creator (`javascript TEST_REDUX`) is the variable our reducer will need to understand that action type being passed to it by our action.
+The action ` testRedux()` will be the function we call from our component. The action creator `javascript TEST_REDUX` is the variable our reducer will need to understand the action type that gets passed to it by our action.
 
 Speaking of reducers, let's build ours now.
 
-Because I know we're going to want to grow this app further. I'm going to take the time now to build both a reducer AND a file that will combine all of our eventual reducers together using redux's `
+Because I know we're going to want to grow this app further. I'm going to take the time now to build both a reducer AND a file that will combine all of our eventual reducers together using redux's `combineReducers()`.
+
+We make our files:
+
+```bash
+# ./client/src
+touch reducers/tictactoe.js reducers/index.js
+```
+
+Now let's make our first reducer:
+
+```javascript
+/*    ./client/src/reducers/tictactoe.js     */
+
+//import our action creator
+import {TEST_REDUX} from '../actions/tictactoe'
+
+//create the reducer
+function tictactoe (state = {}, action) {
+  switch (action.type) {
+    case TEST_REDUX: {
+      return {
+        ...state,
+      }
+    }
+    default: {
+      return {
+        ...state,
+      }
+    }
+  }
+}
+
+//export it
+export default tictactoe
+```
+
+We should also make the file that will combine our reducers:
+
+```javascript
+/*    ./client/src/reducers/index.js     */
+
+//bring in combineReducers
+import {combineReducers} from 'redux'
+
+//import the reducer we just created
+import tictactoe from './tictactoe'
+
+const reducers = combineReducers({
+  tictactoe,
+})
+
+export default reducers
+
+```
+
+Next we are going to make the actual store.
+
+```bash
+# ./client/src
+touch store/index.js
+```
+
+This file is where we will be creating our store, hooking in our reducers, and configuring eventual middleware.
+
+
+```javascript
+/*    ./client/src/store/index.js     */
+//import redux tools
+import { createStore} from 'redux'
+
+//import our reducers
+import reducers from '../reducers'
+
+//create a function that will configure our store
+const configureStore = () => {
+
+  const store = createStore(reducers)
+
+  return store
+}
+
+//create our store
+const store = configureStore()
+
+export default store
+```
+
+Our last step will be to connect out redux store to our react components with redux's `<Provider/>` component.
+
+Let's make our `App/index.js` component look like this:
+
+```javascript
+/*    ./client/src/containers/App/index.js     */
+
+import React, { Component } from 'react'
+
+//bring in Provider and our store
+import {Provider} from 'react-redux'
+import store from '../../store'
+
+class App extends Component {
+  render() {
+    return (
+      <Provider
+        {/*make sure to pass your store as a prop!*/}
+        store={store}
+      >
+        <h1>TicTacTuring</h1>
+      </Provider>
+    )
+  }
+}
+
+export default App
+```
+
+Now that we've hooked up our store, let's test things out.
+
+```bash
+# ./client
+npm start
+```
+
+Great, and when I look at my site using react devtools, I see that my store is being successfully connected to the app via `<Provider/>`. 

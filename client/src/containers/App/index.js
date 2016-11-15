@@ -1,17 +1,15 @@
 import React, { Component } from 'react'
-
+import {Provider} from 'react-redux'
+import store from '../../store'
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <div>
-          <h2>Welcome to React</h2>
-        </div>
-        <p>
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Provider
+        store={store}
+      >
+        <h1>TicTacTuring</h1>
+      </Provider>
     )
   }
 }
