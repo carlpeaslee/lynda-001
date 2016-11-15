@@ -11,8 +11,27 @@ We need to create at least four files to get redux working. The order doesn't re
 First, we need to install `redux`:
 
 ```bash
-# tictacturing/src
+# ./client/src
 npm install redux --save
 ```
 
-Let's start by creating an action file. 
+Let's start by creating a file for redux actions. We are going to try and group our actions together by feature.
+
+We'll begin with the actions needed for our tictactoe game:
+
+```bash
+# ./client/src
+touch actions/tictactoe.js
+```
+
+| Before | After |
+| --- | --- |
+|
+```javascript
+console.log('hello world')
+```
+|
+```javascript
+-console.log('hello world')-
+```
+|
