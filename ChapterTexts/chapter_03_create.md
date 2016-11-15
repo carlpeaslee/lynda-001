@@ -86,7 +86,7 @@ First navigate into your client directory:
 
 ...and then start your application!
 
-*```# ../tictacturing/client```*
+*```# ../tictacturing/client```*<br/>
 ```npm start```
 
 Your starter application should open up in your browser.
@@ -95,12 +95,12 @@ Great! Now let's check in our code before we begin to modify our starter app!
 
 ...go back to your project's root directory...
 
-*```# ../tictacturing/client```*
+*```# ../tictacturing/client```*<br/>
 ```cd ..```
 
 and now add, commit, and push your files to your remote:
 
-*```# ../tictacturing```*
-```git add .```
-```git commit -m 'we created our initial app with create-react-app'```
+*```# ../tictacturing```*<br/>
+```git add .```<br/>
+```git commit -m 'we created our initial app with create-react-app'```<br/>
 ```git push origin master```
