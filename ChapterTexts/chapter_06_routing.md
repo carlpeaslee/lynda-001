@@ -98,7 +98,7 @@ import React, {Component} from 'react'
 
 class Template extends Component {
   render() {
-    return {
+    return (
       <div>
         <header>
           <h1>TicTacTuring</h1>
@@ -107,7 +107,7 @@ class Template extends Component {
           {this.props.children}
         </main>
       </div>
-    }
+    )
   }
 }
 
@@ -125,3 +125,56 @@ touch src/containers/Routing/index.js
 A note: as we create different containers, take note of how our application is structured as a series of nested containers.
 
 We could hypothetically combine a number of them into a single large container but then it might be more difficult later on to reason about which information is being connected in which file.
+
+Let's create our `Routing/index.js` file:
+
+*./client/src/containers/Routing/_index.js_*
+```javascript
+import React, { Component } from 'react'
+import {Router, browserHistory} from 'react-router'
+import routes from '../../routes'
+
+class Routing extends Component {
+  render() {
+    return (
+      <Router
+        routes={routes}
+        history={browserHistory}
+      >
+        <ReduxStore/>
+      </Router>
+    );
+  }
+}
+
+export default Routing
+```
+
+Notice here how we're changing the location where we're bring in `ReduxStore`. This means we also need to change our app file:
+
+*./client/src/containers/App/_index.js_*
+```javascript
+import React, { Component } from 'react'
+
+import Routing from '../Routing'
+
+class App extends Component {
+  render() {
+    return (
+      <Routing/>
+    )
+  }
+}
+
+export default App
+
+```
+
+Our site should be working again so let's fire things up!
+
+```bash
+# ./client
+npm start
+```
+
+Things look good. Now try navigating to [http://localhost:3000/profile] (http://localhost:3000/profile)

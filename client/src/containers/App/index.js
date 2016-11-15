@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 
-import ReduxStore from '../ReduxStore'
+import Routing from '../Routing'
 
 class App extends Component {
   render() {
     return (
-      <ReduxStore/>
+      <Routing/>
     )
   }
 }
