@@ -11,6 +11,8 @@ We need to create at least four files to get redux working. The order doesn't re
 First, we need to install `redux`:
 
 ```bash
-*# tictacturing/src
+# tictacturing/src
 npm install redux --save
 ```
+
+Let's start by creating an action file. 
