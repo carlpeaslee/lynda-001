@@ -80,5 +80,5 @@ tictacturing
 You can also go ahead and try running your new react app to see what it's rendering.
 
 `cd client`
-`/client` | `$` | `npm start`
-| --- | --- |
+| `/client` | `$` | `npm start` |
+| --- | --- | --- |
