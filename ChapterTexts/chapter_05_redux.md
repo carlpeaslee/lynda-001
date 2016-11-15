@@ -38,3 +38,8 @@ touch actions/tictactoe.js
     <td> -what- </td>
   </tr>
 </table>
+
+
+Before | After
+--- | ---
+```javascript console.log ``` | ~~```javascript console.log```
