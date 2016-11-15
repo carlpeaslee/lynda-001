@@ -53,32 +53,53 @@ If you don't have `create-react-app` installed globally on your machine, run:
 Once you have `create-react-app` available from the command line, go ahead and create the client-side react application:
 
 `create-react-app client`
-`# Creating a new React app in /tictacturing/client.`
-`# ...`
-`Happy Hacking!`
+*`# Creating a new React app in /tictacturing/client.`*
+*`...`*
+*`# Happy Hacking!`*
 
 Let's take a second now to examine the code that's been generated for us.
 
 ```
 tictacturing
   .git
-  /client       *<-- _NEW!_*
-    /node_modules       *<-- our dependencies*
-    /public       *<-- favicon and index.html file*
-    /src      *<-- all of the fun stuff!*
-      App.css       *<-- a css module  for our app*
-      App.js      *<-- our App component*
-      App.test.js  *<-- create-react-app comes with automated testing features!*
-      index.css      *<-- the root css file*
-      index.js      *<-- our root javascript files*
-      logo.svg    *<-- a pretty little logo*
-    .gitignore    *<-- a git ignore file for our client-side app*
-    package.json  *<-- go ahead and change in the fields for this, too
-    README.md   *<-- some good information about the code for create-react-app
+  /client       <-- _NEW!_
+    /node_modules       <-- our dependencies
+    /public       <-- favicon and index.html file
+    /src      <-- all of the fun stuff!
+      App.css       <-- a css module  for our app
+      App.js      <-- our App component
+      App.test.js  <-- create-react-app comes with automated testing features!
+      index.css      <-- the root css file
+      index.js      <-- our root javascript files
+      logo.svg    <-- a pretty little logo
+    .gitignore    <-- a git ignore file for our client-side app
+    package.json  <-- go ahead and change in the fields for this, too
+    README.md   <-- some good information about the code for create-react-app
   package.json  
 ```
 You can also go ahead and try running your new react app to see what it's rendering.
 
-`cd client`
-`/client` | `$` | `npm start`
---- | --- | --- 
+First navigate into your client directory:
+
+*`# ../tictacturing`*
+`cd client/`
+
+...and then start your application!
+
+*`# ../tictacturing/client`*
+`npm start`
+
+Your starter application should open up in your browser.
+
+Great! Now let's check in our code before we begin to modify our starter app!
+
+...go back to your project's root directory...
+*`# ../tictacturing/client`*
+`cd ..`
+
+and now add, commit, and push your files to your remote:
+
+*`# ../tictacturing`*
+`git add .`
+`git commit -m 'we created our initial app with create-react-app'`
+`git push origin master`
