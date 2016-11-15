@@ -24,14 +24,17 @@ We'll begin with the actions needed for our tictactoe game:
 touch actions/tictactoe.js
 ```
 
-| Before | After |
-| --- | --- |
-|
-```javascript
-console.log('hello world')
-```
-|
-```javascript
--console.log('hello world')-
-```
-|
+<table>
+  <tr>
+    <th>Before</th>
+    <th>After</th>
+  </tr>  
+  <tr>
+    <td>
+      ```javascript
+        console.log('hello world')
+      ```
+    </td>
+    <td> -what- </td>
+  </tr>
+</table>
