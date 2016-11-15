@@ -11,34 +11,34 @@ The first thing we are going to do is navigate into the directory where we'd lik
 First we'll use the command line to make our project directory:
 
 
-`../`  _`$`_  <hr>`mkdir tictacturing` 
+```mkdir tictacturing```
 
 ...and navigate into that directory...
 
-$ | ```cd tictacturing```
+```cd tictacturing```
 
 Now, let's initialize a project:
 
-$ ```npm init -y```
+```npm init -y```
 
 This will create a ```package.json``` file in your root directory. When you get a chance, you should modify this document so that it lists you as the author.
 
 Next, we will initialize a git repository:
 
-$ ```git init```
+```git init```
 
 ..add the contents of our directory to it...
 
-$ ```git add .```
+```git add .```
 
 ...commit those changes...
 
-$ ```git commit .```
+```git commit .```
 
 ...add a remote directory...
 
-$ ```git remote add origin <YOUR_REMOTE_URL>```
+```git remote add origin <YOUR_REMOTE_URL>```
 
 ...and then push our changes to the remote
 
-$ ```git push origin master```
+```git push origin master```
