@@ -100,7 +100,7 @@ Great! Now let's check in our code before we begin to modify our starter app!
 
 and now add, commit, and push your files to your remote:
 
-*`# ../tictacturing`*
+*```# ../tictacturing```*
 ```git add .```
 ```git commit -m 'we created our initial app with create-react-app'```
 ```git push origin master```
