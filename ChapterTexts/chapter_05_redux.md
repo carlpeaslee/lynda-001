@@ -42,4 +42,9 @@ touch actions/tictactoe.js
 
 Before | After
 --- | ---
-```javascript console.log ``` | ~~```javascript console.log```
+```javascript
+console.log
+``` |
+```javascript
+console.log
+```
