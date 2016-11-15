@@ -24,27 +24,25 @@ We'll begin with the actions needed for our tictactoe game:
 touch actions/tictactoe.js
 ```
 
-<table>
-  <tr>
-    <th>Before</th>
-    <th>After</th>
-  </tr>  
-  <tr>
-    <td>
-      ```javascript
-        console.log('hello world')
-      ```
-    </td>
-    <td> -what- </td>
-  </tr>
-</table>
+Go ahead and open up the file we just created and lets write our first code.
 
+```javascript
+/*    ./client/src/actions/tictactoe.js     */
 
-Before | After
---- | ---
-```javascript
-console.log
-``` |
-```javascript
-console.log
+//first we make our action creator
+export const TEST_REDUX = 'TEST_REDUX'
+
+//then we make the actual action
+export function testRedux() {
+  console.log('We are testing redux.')
+  return {
+    type: TEST_REDUX,
+  }
+}
 ```
+
+The action (`javascript testRedux()`) will be the function we call from our component. The action creator (`javascript TEST_REDUX`) is the variable our reducer will need to understand that action type being passed to it by our action.
+
+Speaking of reducers, let's build ours now.
+
+Because I know we're going to want to grow this app further. I'm going to take the time now to build both a reducer AND a file that will combine all of our eventual reducers together using redux's `
