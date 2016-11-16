@@ -45,3 +45,5 @@ Now I'm going to take my wireframe and I'm going to make some guesses about whic
 I'm also going to try and keep in mind ways for me to make them as reusable as possible.
 
 Let's start with our home page:
+
+![HomeComponentMap](https://github.com/carlpeaslee/lynda-001/blob/be896f13e3acee43ef6719e1f11635615d2784b6/ChapterTexts/imgs/ch10/HomeComponentMap.png?raw=true "HomeComponentMap")
