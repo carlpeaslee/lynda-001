@@ -141,11 +141,7 @@ class Routing extends Component {
         routes={routes}
         history={browserHistory}
       />
-<<<<<<< HEAD
-    );
-=======
     )
->>>>>>> chapter_07_redux2
   }
 }
 
