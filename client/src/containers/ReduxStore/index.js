@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import {Provider} from 'react-redux'
 import store from '../../store'
+import Routing from './Routing'
 
 class ReduxStore extends Component {
   render() {
@@ -9,7 +10,7 @@ class ReduxStore extends Component {
       <Provider
         store={store}
       >
-        <h1>TicTacTuring</h1>
+        <Routing/>
       </Provider>
     )
   }
