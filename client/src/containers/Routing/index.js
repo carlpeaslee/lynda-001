@@ -9,7 +9,7 @@ class Routing extends Component {
         routes={routes}
         history={browserHistory}
       />
-    );
+    )
   }
 }
 

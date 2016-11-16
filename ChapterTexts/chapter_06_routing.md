@@ -141,14 +141,18 @@ class Routing extends Component {
         routes={routes}
         history={browserHistory}
       />
+<<<<<<< HEAD
     );
+=======
+    )
+>>>>>>> chapter_07_redux2
   }
 }
 
 export default Routing
 ```
 
-Notice here how we're changing the location where we're bring in `ReduxStore`. This means we also need to change our app file:
+Let's also check on our app file to make sure everything is where it should be...
 
 *./client/src/containers/App/_index.js_*
 ```javascript
