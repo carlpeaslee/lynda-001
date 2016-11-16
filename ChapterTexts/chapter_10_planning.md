@@ -34,4 +34,4 @@ Ooh, sorry. Actually before we begin writing our code, it's really really really
 
 Here is a wireframe of the site I'm imagining.
 
-![home](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![home](https://github.com/carlpeaslee/lynda-001/blob/master/ChapterTexts/imgs/ch10/Home.png?raw=true "Home")
