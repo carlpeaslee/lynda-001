@@ -140,9 +140,7 @@ class Routing extends Component {
       <Router
         routes={routes}
         history={browserHistory}
-      >
-        <ReduxStore/>
-      </Router>
+      />
     );
   }
 }
@@ -156,12 +154,12 @@ Notice here how we're changing the location where we're bring in `ReduxStore`. T
 ```javascript
 import React, { Component } from 'react'
 
-import Routing from '../Routing'
+import ReduxStore from '../ReduxStore'
 
 class App extends Component {
   render() {
     return (
-      <Routing/>
+      <ReduxStore/>
     )
   }
 }
