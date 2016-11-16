@@ -33,3 +33,5 @@ So now we can start making our app, right? Dive right in?
 Ooh, sorry. Actually before we begin writing our code, it's really really really important to plan things out first. So let's go to the drawing board.
 
 Here is a wireframe of the site I'm imagining.
+
+![home](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
