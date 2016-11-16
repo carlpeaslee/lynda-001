@@ -35,3 +35,13 @@ Ooh, sorry. Actually before we begin writing our code, it's really really really
 Here is a wireframe of the site I'm imagining.
 
 ![home](https://github.com/carlpeaslee/lynda-001/blob/master/ChapterTexts/imgs/ch10/Home.png?raw=true "Home")
+
+![homeDrawerClosed](https://github.com/carlpeaslee/lynda-001/blob/master/ChapterTexts/imgs/ch10/Home%20-%20Drawer%20Closed.png?raw=true "Home (drawer closed)")
+
+![profile](https://github.com/carlpeaslee/lynda-001/blob/master/ChapterTexts/imgs/ch10/Profile.png?raw=true "Profile")
+
+Now I'm going to take my wireframe and I'm going to make some guesses about which stuff on the page I'll want to make into components.
+
+I'm also going to try and keep in mind ways for me to make them as reusable as possible.
+
+Let's start with our home page:
